@@ -27,6 +27,8 @@ class DatabaseSeeder extends Seeder
         //     CustomerSeeder::class,
         // ]);
 
-        Customer::factory(10)->create();
+        // Customer::factory(10)->create();
+
+         User::factory(10)->create();
     }
 }

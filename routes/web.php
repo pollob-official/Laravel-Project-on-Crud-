@@ -3,6 +3,7 @@
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\EventTypeController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -57,6 +58,11 @@ Route::prefix("customer")->controller(CustomerController::class)->group(function
 // Route::delete("/customer/delete/{id}", [CustomerController::class, "delete"]);
 // Route::get("/customer/edit/{id}", [CustomerController::class, "edit"]);
 // Route::post("/customer/update/{id}", [CustomerController::class, "update"]);
+
+Route::prefix("system")->group(function(){
+    Route::resource('user', UserController::class);
+});
+
 
 Route::fallback(function(){
     return "404 No Route matched";

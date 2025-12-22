@@ -50,3 +50,6 @@ class EventTypeController extends Controller
         return redirect("event_type");
     }
 }
+
+
+// php artisan make:controller UserController --resource
