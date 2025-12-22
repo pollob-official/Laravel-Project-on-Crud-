@@ -62,7 +62,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 migration
 
-php artisan make:migration create_customers_table php artisan migrate
+php artisan make:migration create_customers_table 
+php artisan migrate
 
 to delete all database php artisan migrate:rollback
 
@@ -74,3 +75,4 @@ php artisan db:seed
 php artisan lang:publish
 
  php artisan make:model event_type -c
+ 
