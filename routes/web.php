@@ -60,7 +60,7 @@ Route::prefix("customer")->controller(CustomerController::class)->group(function
 // Route::post("/customer/update/{id}", [CustomerController::class, "update"]);
 
 Route::prefix("system")->group(function(){
-    Route::resource('user', UserController::class);
+    Route::resource('users', UserController::class);
 });
 
 
